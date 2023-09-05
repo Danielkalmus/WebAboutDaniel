@@ -1,0 +1,120 @@
+body {
+    background-image: url('./images/photo-1593062096033-9a26b09da705.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Fix the background image in place */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+    color: #583d25; /* Dark Wood Color */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Center text */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    animation: fadeIn 2s;
+    color: gray; 
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+    animation: slideInLeft 2s;
+    color: #583d25; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.39); /* Transparent White */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeInUp 2s;
+    overflow-x: hidden;
+}
+
+#showContactInfo {  
+    background-color: #583d25;
+    color: gray;
+    border: none;
+    border-radius: 20px;
+    height: 40px; 
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; /* Add a pointer cursor on hover */
+    outline: none; /* Remove the button focus outline */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+#showContactInfo:hover {
+    background-color: gray;
+    color: #583d25;
+}
+
+#myPic{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
