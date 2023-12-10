@@ -45,9 +45,9 @@ p {
     overflow-x: hidden;
 }
 
-#showContactInfo {  
+.btn {  
     background-color: #583d25;
-    color: gray;
+    color: white;
     border: none;
     border-radius: 20px;
     height: 40px; 
@@ -59,7 +59,7 @@ p {
     transition: background-color 0.3s ease; /* Add a smooth transition */
 }
 
-#showContactInfo:hover {
+.btn:hover {
     background-color: gray;
     color: #583d25;
 }
